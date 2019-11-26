@@ -1,0 +1,10 @@
+
+let masyvas = ['pirmas', 'antras', 'trecias'];
+
+masyvas =JSON.stringify(masyvas);
+
+localStorage.setItem('masyvas', masyvas);
+
+kint = localStorage.getItem('masyvas');
+
+console.log(JSON.parse(kint));
