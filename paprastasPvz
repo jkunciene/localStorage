@@ -1,0 +1,12 @@
+//local storage
+
+const button= document.querySelector('button')
+button.addEventListener('click', paimkDuomenis)
+function paimkDuomenis(){
+  const reiksme = document.getElementById('paimti').value
+  console.log(typeof reiksme)
+  localStorage.setItem('bilekas', reiksme);
+  let dezuteInformacijai = localStorage.getItem('bilekas')
+  console.log(dezuteInformacijai)
+  
+}
